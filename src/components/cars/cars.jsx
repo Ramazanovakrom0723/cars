@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UserModal from "../modal"; // kerakli yo'lni kiriting
+import UserModal from "../modal";
 import "./cars.css";
 
 const Cars = () => {
