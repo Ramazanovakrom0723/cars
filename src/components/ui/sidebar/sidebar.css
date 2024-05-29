@@ -1,0 +1,23 @@
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    border-right: 2px solid chocolate;
+}
+.nav_link{
+    text-align: center;
+    padding: 10px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 23px;
+    border: 2px solid rgb(104, 231, 104);
+    border-radius: 10px ;
+    transition: 0.5s;
+}
+.nav_link:hover{
+    font-size: 27px;
+    background-color: rgb(104, 231, 104);
+    padding: 4px;
+    margin: 7px;
+}

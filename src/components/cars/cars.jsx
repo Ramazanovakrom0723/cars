@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UserModal from "../modal";
 import "./cars.css";
+import { NavLink } from "react-router-dom";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
@@ -76,6 +77,9 @@ const Cars = () => {
                         <button className="btn btn-danger" onClick={() => deleteCar(index)}>
                           <i className="fa-regular fa-trash-can"></i>
                         </button>
+                        <NavLink to={`/main/single-car/${item.id}`} className="btn btn-primary">
+                          <span><i class="fa-solid fa-eye"></i></span>
+                        </NavLink>
                       </div>
                     </td>
                   </tr>

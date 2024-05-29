@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {nanoid} from "nanoid";
 
 const UserModal = ({ open, toggle, addCar }) => {
   const [form, setForm] = useState({
@@ -20,7 +21,8 @@ const UserModal = ({ open, toggle, addCar }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    addCar(form);
+    let id = nanoid()
+    addCar({...form, id});
     toggle();
   };
 

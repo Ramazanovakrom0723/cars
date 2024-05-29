@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
         const {usarname, password} = form
         if(usarname === "admin" && password === "123"){
-            navigate("/cars")
+            navigate("/main")
         }else{
             alert('404')
         }
